@@ -2,7 +2,7 @@
 //  MoodTrackerApp.swift
 //  MoodTracker
 //
-//  Created by Gabriela Sanchez on 29/01/25.
+//  Created by Gabriela Sanchez on 27/01/25.
 //
 
 import SwiftUI
@@ -11,7 +11,11 @@ import SwiftUI
 struct MoodTrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // The main entry point of the app.
+            // This should display MoodListView as the first screen.
+            // Example: MoodListView()
+            MoodRowView()
         }
     }
 }
+

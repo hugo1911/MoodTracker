@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0EA9BA6A2D4AFB780035156C /* MoodTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9BA692D4AFB780035156C /* MoodTrackerApp.swift */; };
-		0EA9BA6C2D4AFB780035156C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9BA6B2D4AFB780035156C /* ContentView.swift */; };
 		0EA9BA6E2D4AFB790035156C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EA9BA6D2D4AFB790035156C /* Assets.xcassets */; };
 		0EA9BA712D4AFB790035156C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EA9BA702D4AFB790035156C /* Preview Assets.xcassets */; };
 		0EA9BA7B2D4AFB790035156C /* MoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9BA7A2D4AFB790035156C /* MoodTrackerTests.swift */; };
 		0EA9BA852D4AFB790035156C /* MoodTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9BA842D4AFB790035156C /* MoodTrackerUITests.swift */; };
 		0EA9BA872D4AFB790035156C /* MoodTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9BA862D4AFB790035156C /* MoodTrackerUITestsLaunchTests.swift */; };
+		0EA9BA972D4AFC160035156C /* MoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9BA962D4AFC160035156C /* MoodEntry.swift */; };
+		0EA9BA992D4AFC380035156C /* MoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9BA982D4AFC380035156C /* MoodViewModel.swift */; };
+		0EA9BA9B2D4AFC4C0035156C /* MoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9BA9A2D4AFC4C0035156C /* MoodListView.swift */; };
+		0EA9BA9D2D4AFC5D0035156C /* AddMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9BA9C2D4AFC5D0035156C /* AddMoodView.swift */; };
+		0EA9BA9F2D4AFC6C0035156C /* MoodRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9BA9E2D4AFC6C0035156C /* MoodRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		0EA9BA662D4AFB780035156C /* MoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EA9BA692D4AFB780035156C /* MoodTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTrackerApp.swift; sourceTree = "<group>"; };
-		0EA9BA6B2D4AFB780035156C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0EA9BA6D2D4AFB790035156C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EA9BA702D4AFB790035156C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0EA9BA762D4AFB790035156C /* MoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,11 @@
 		0EA9BA802D4AFB790035156C /* MoodTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EA9BA842D4AFB790035156C /* MoodTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTrackerUITests.swift; sourceTree = "<group>"; };
 		0EA9BA862D4AFB790035156C /* MoodTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0EA9BA962D4AFC160035156C /* MoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntry.swift; sourceTree = "<group>"; };
+		0EA9BA982D4AFC380035156C /* MoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewModel.swift; sourceTree = "<group>"; };
+		0EA9BA9A2D4AFC4C0035156C /* MoodListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodListView.swift; sourceTree = "<group>"; };
+		0EA9BA9C2D4AFC5D0035156C /* AddMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoodView.swift; sourceTree = "<group>"; };
+		0EA9BA9E2D4AFC6C0035156C /* MoodRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,10 @@
 		0EA9BA682D4AFB780035156C /* MoodTracker */ = {
 			isa = PBXGroup;
 			children = (
+				0EA9BA952D4AFC050035156C /* Model */,
+				0EA9BA942D4AFBFE0035156C /* ViewModel */,
+				0EA9BA932D4AFBF40035156C /* View */,
 				0EA9BA692D4AFB780035156C /* MoodTrackerApp.swift */,
-				0EA9BA6B2D4AFB780035156C /* ContentView.swift */,
 				0EA9BA6D2D4AFB790035156C /* Assets.xcassets */,
 				0EA9BA6F2D4AFB790035156C /* Preview Content */,
 			);
@@ -125,6 +135,32 @@
 				0EA9BA862D4AFB790035156C /* MoodTrackerUITestsLaunchTests.swift */,
 			);
 			path = MoodTrackerUITests;
+			sourceTree = "<group>";
+		};
+		0EA9BA932D4AFBF40035156C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0EA9BA9C2D4AFC5D0035156C /* AddMoodView.swift */,
+				0EA9BA9A2D4AFC4C0035156C /* MoodListView.swift */,
+				0EA9BA9E2D4AFC6C0035156C /* MoodRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0EA9BA942D4AFBFE0035156C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0EA9BA982D4AFC380035156C /* MoodViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0EA9BA952D4AFC050035156C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0EA9BA962D4AFC160035156C /* MoodEntry.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EA9BA6C2D4AFB780035156C /* ContentView.swift in Sources */,
+				0EA9BA9F2D4AFC6C0035156C /* MoodRowView.swift in Sources */,
+				0EA9BA9D2D4AFC5D0035156C /* AddMoodView.swift in Sources */,
 				0EA9BA6A2D4AFB780035156C /* MoodTrackerApp.swift in Sources */,
+				0EA9BA992D4AFC380035156C /* MoodViewModel.swift in Sources */,
+				0EA9BA972D4AFC160035156C /* MoodEntry.swift in Sources */,
+				0EA9BA9B2D4AFC4C0035156C /* MoodListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
